@@ -1,4 +1,4 @@
-package keyin.datastructure.datastructure_sprint_api.dto;
+package keyin.datastructure.datastructure_sprint_api.exception;
 
 import java.time.LocalDateTime;
 
