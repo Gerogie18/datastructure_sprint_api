@@ -51,6 +51,14 @@ public class TreeRecordService {
     }
 
     /**
+     * Retrieves ALL tree records from the database, regardless of user.
+     * @return A list of all TreeRecord entities.
+     */
+    public List<TreeRecord> getAllTrees() {
+        return treeRecordRepository.findAll();
+    }
+
+    /**
      * Retrieves all tree records for a specific user by their ID.
      */
     public List<TreeRecord> getTreesForUser(Long userId) {

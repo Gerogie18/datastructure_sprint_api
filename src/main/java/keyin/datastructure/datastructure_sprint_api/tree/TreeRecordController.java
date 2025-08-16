@@ -14,6 +14,16 @@ public class TreeRecordController {
     private TreeService treeService;
 
     /**
+     * Gets all tree records from the entire table.
+     * This corresponds to the GET /api/trees/all endpoint.
+     */
+    @GetMapping("/all")
+    public ResponseEntity<List<TreeRecord>> getAllTrees() {
+        List<TreeRecord> records = treeRecordService.getAllTrees();
+        return ResponseEntity.ok(records);
+    }
+
+    /**
      * Creates a new binary search tree for a given user.
      * This fulfills the "/process-numbers" requirement.
      * URL: POST /api/trees
