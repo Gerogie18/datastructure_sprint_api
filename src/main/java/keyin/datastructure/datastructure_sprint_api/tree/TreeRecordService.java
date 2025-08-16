@@ -1,7 +1,5 @@
 package keyin.datastructure.datastructure_sprint_api.tree;
 
-package com.yourpackage.bstgame.tree;
-
 import keyin.datastructure.datastructure_sprint_api.exception.ResourceNotFoundException;
 import keyin.datastructure.datastructure_sprint_api.user.User;
 import keyin.datastructure.datastructure_sprint_api.user.UserRepository;
