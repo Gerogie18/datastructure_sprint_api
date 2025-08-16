@@ -1,5 +1,6 @@
 package keyin.datastructure.datastructure_sprint_api.tree;
 
+import keyin.datastructure.datastructure_sprint_api.tree.TreeRecordService;
 import keyin.datastructure.datastructure_sprint_api.tree.DTO.CreateTreeRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +13,8 @@ public class TreeRecordController {
 
     @Autowired
     private TreeService treeService;
+
+    @Autowired TreeRecordService treeRecordService;
 
     /**
      * Gets all tree records from the entire table.
